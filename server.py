@@ -26,6 +26,7 @@ def success():
     return html
 
 
+
 @route('/fail')
 def fail():
     raise RuntimeError("FAIL")
