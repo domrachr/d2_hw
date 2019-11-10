@@ -10,23 +10,6 @@ sentry_sdk.init(
     integrations=[BottleIntegration()]
 )
 
-# app = Bottle()
-
-@route('/')
-def index():
-    html = """
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Интеграция с Sentry</title>
-  </head>
-  <body>
-    <h1>SUCCESS</h1>
-  </body>
-</html>
-"""
-    return html
-
 @route('/success')
 def success():
     html = """
